@@ -1,1 +1,19 @@
-// Mixins Here
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.fade-in(@duration: 2s, @timing:linear, @name:fadein) {
+    animation: @duration @timing @name
+}
+
+.basic-btn-style {
+    color: @porcelain;
+    text-align: center;
+}
+
+.button-style(@width:30%, @bg-color:@btn-bg-color) {
+    width: @width;
+    background-color: @bg-color;
+}
+
